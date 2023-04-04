@@ -14,12 +14,14 @@ const palindromes = function (input) {
 
 const cleanString = function (input) {
     let output = "";
+    input = input.toLowerCase();
+    
     for (let i = 0; i < input.length; i++) {
-        if (input[i].match(/[a-zA-Z]/)) {
+        if (input[i].match(/[a-z]/)) {
             output += input[i];
         }
     }
-    return output.toLowerCase();
+    return output;
 }
 
 // Do not edit below this line
